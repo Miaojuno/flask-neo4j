@@ -1,0 +1,14 @@
+{%extends "base.html" %}
+{%block header %}
+    <title>result1</title>
+{% endblock %}
+
+{%block content%}
+    <script>
+
+        document.write("<img src=\"{{url_for('static', filename='img/trade2016.jpg')}}\" height=\"400\" width=\"500\">")
+        document.write("<img src=\"{{url_for('static', filename='img/trade2017.jpg')}}\" height=\"400\" width=\"500\">")
+        document.write("<img src=\"{{url_for('static', filename='img/trade2018.jpg')}}\" height=\"400\" width=\"500\">")
+
+    </script>
+{%endblock%}

@@ -1,0 +1,16 @@
+
+{%extends "base.html" %}
+{%block header %}
+    <title>result2</title>
+{% endblock %}
+
+{%block content%}
+    <script>
+
+        document.write("<img src=\"{{url_for('static', filename='img/payment2016.jpg')}}\" height=\"400\" width=\"500\">")
+        document.write("<img src=\"{{url_for('static', filename='img/payment2017.jpg')}}\" height=\"400\" width=\"500\">")
+        document.write("<img src=\"{{url_for('static', filename='img/payment2018.jpg')}}\" height=\"400\" width=\"500\">")
+
+    </script>
+
+{%endblock%}

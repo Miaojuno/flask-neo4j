@@ -1,0 +1,30 @@
+{%extends "base.html" %}
+{%block header %}
+    <!--<div class="navbar">-->
+        <!--{% block navbar %}-->
+        <!--{{ nav.top.render() }}-->
+        <!--{% endblock %}-->
+
+    <!--</div>-->
+    <!--<meta charset="UTF-8">-->
+    <title>Home Page</title>
+{%endblock%}
+{%block content%}
+
+    <!--<h1>welcome to flask</h1>-->
+    <!--<form method="post" action="/Result">-->
+        <!--<input type="text" name="anwser">-->
+        <!--<input type="submit" value="Submit" name="ok"/>-->
+    <!--</form>-->
+
+    <form class="form-signin" method="post" action="/Result">
+          <h1 class="h3 mb-3 font-weight-normal">请输入需要查询内容</h1>
+        <br>
+          <label for="Answer" class="sr-only">Enter your answer</label>
+          <input id="Answer" class="form-control" placeholder="你的问题" required="" autofocus="" name="an">
+        <br>
+          <button class="btn btn-lg btn-primary btn-block" type="submit">OK</button>
+        </form>
+
+{%endblock%}
+
